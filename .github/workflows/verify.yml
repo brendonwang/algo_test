@@ -33,8 +33,6 @@ jobs:
 
       - name: parse-doxygen
         uses: competitive-verifier/actions/parse-doxygen@v2
-        with:
-          # verify-files: verify_files.json
 
       - name: Upload verify_files.json
         uses: competitive-verifier/actions/upload-verify-artifact@v2
