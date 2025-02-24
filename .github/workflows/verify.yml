@@ -34,12 +34,12 @@ jobs:
       - name: parse-doxygen
         uses: competitive-verifier/actions/parse-doxygen@v2
         with:
-          verify-files: verify_files.json
+          # verify-files: verify_files.json
 
       - name: Upload verify_files.json
         uses: competitive-verifier/actions/upload-verify-artifact@v2
         with:
-          # file: verify_files.json
+          file: verify_files.json
 
       - name: Check bundled
         id: test-bundled
